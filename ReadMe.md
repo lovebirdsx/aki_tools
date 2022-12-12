@@ -8,7 +8,12 @@
 注意,需要将Perforce上的Typing目录克隆至此目录
 `git p4 clone //aki/development/Source/Client/TypeScript/Typing/`
 
-## Watch.bat
+## 针对编辑器代码watch的方法
 
-将Watch.bat拷贝到Aki的TypeScript的Tool下
-运行后可以进行ts-watch的操作
+- 在Aki的Source/Client/TypeScript目录下新建Tool目录
+- 拷贝以下四个文件到该目录
+    - Watch.bat
+    - send_editor_command.js
+    - package.json
+    - on_watch_success.bat
+- 运行Source/Client/TypeScript/Tool/Watch.bat
